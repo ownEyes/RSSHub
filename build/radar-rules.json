@@ -2532,19 +2532,6 @@
       }
     ]
   },
-  "gofans.cn": {
-    "_name": "GoFans",
-    ".": [
-      {
-        "title": "最新限免",
-        "docs": "https://docs.rsshub.app/routes/program-update#app-store-mac-app-store",
-        "source": [
-          "/"
-        ],
-        "target": "/appstore/gofans"
-      }
-    ]
-  },
   "aqara.com": {
     "_name": "Aqara",
     ".": [
@@ -3811,27 +3798,6 @@
       }
     ]
   },
-  "theblockbeats.info": {
-    "_name": "律动",
-    "rszhaopin": [
-      {
-        "title": "快讯",
-        "docs": "https://docs.rsshub.app/routes/new-media#lu-dong-xin-wen-kuai-xun",
-        "source": [
-          "/"
-        ],
-        "target": "/blockbeats/newsflash"
-      },
-      {
-        "title": "文章",
-        "docs": "https://docs.rsshub.app/routes/new-media#lu-dong-xin-wen-kuai-xun",
-        "source": [
-          "/"
-        ],
-        "target": "/blockbeats/article"
-      }
-    ]
-  },
   "bloomberg.com": {
     "_name": "Bloomberg",
     "www": [
@@ -4904,35 +4870,6 @@
         "docs": "https://docs.rsshub.app/routes/new-media#zhong-hua-wang",
         "source": "/:category",
         "target": "/china/news/:category?"
-      }
-    ]
-  },
-  "chinacef.cn": {
-    "_name": "首席经济学家论坛",
-    ".": [
-      {
-        "title": "最新文章列表",
-        "docs": "https://docs.rsshub.app/routes/finance#shou-xi-jing-ji-xue-jia-lun-tan",
-        "source": [
-          "/"
-        ],
-        "target": "/chinacef"
-      },
-      {
-        "title": "专家文章",
-        "docs": "https://docs.rsshub.app/routes/finance#shou-xi-jing-ji-xue-jia-lun-tan-zhuan-jia",
-        "source": [
-          "/index.php/experts/zjmain/experts_id/:experts_id"
-        ],
-        "target": "/chinacef/:experts_id"
-      },
-      {
-        "title": "金融热点",
-        "docs": "https://docs.rsshub.app/routes/finance#shou-xi-jing-ji-xue-jia-lun-tan-jin-rong-re-dian",
-        "source": [
-          "/index.php/index/index"
-        ],
-        "target": "/chinacef/portal/hot"
       }
     ]
   },
@@ -6059,151 +5996,6 @@
       }
     ]
   },
-  "github.com": {
-    "_name": "GitHub",
-    ".": [
-      {
-        "title": "Repo branches",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/branches",
-          "/:user/:repo"
-        ],
-        "target": "/github/branches/:user/:repo"
-      },
-      {
-        "title": "Issues / Pull Requests comments",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/:type/:number"
-        ],
-        "target": "/github/comments/:user/:repo/:number"
-      },
-      {
-        "title": "Issue & Pull Request comments",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/:type"
-        ],
-        "target": "/github/comments/:user/:repo"
-      },
-      {
-        "title": "Repo contributors",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/graphs/contributors",
-          "/:user/:repo"
-        ],
-        "target": "/github/contributors/:user/:repo"
-      },
-      {
-        "title": "File commits",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": "/:user/:repo/blob/:branch/*filepath",
-        "target": "/github/file/:user/:repo/:branch/:filepath"
-      },
-      {
-        "title": "Repo issues",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/issues",
-          "/:user/:repo/issues/:id",
-          "/:user/:repo"
-        ],
-        "target": "/github/issue/:user/:repo"
-      },
-      {
-        "title": "Repo Pull Requests",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/pulls",
-          "/:user/:repo/pulls/:id",
-          "/:user/:repo"
-        ],
-        "target": "/github/pull/:user/:repo"
-      },
-      {
-        "title": "Pulse",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/pulse",
-          "/:user/:repo/pulse/:period"
-        ],
-        "target": "/github/pulse/:user/:repo/:period?"
-      },
-      {
-        "title": "User repos",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": "/:user",
-        "target": "/github/repos/:user"
-      },
-      {
-        "title": "Repo stars",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/stargazers",
-          "/:user/:repo"
-        ],
-        "target": "/github/stars/:user/:repo"
-      },
-      {
-        "title": "User starred repositories",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": "/:user",
-        "target": "/github/starred_repos/:user"
-      },
-      {
-        "title": "Topics",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": "/topics",
-        "target": "/github/topics/:name/:qs?"
-      },
-      {
-        "title": "Trending",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": "/trending",
-        "target": "/github/trending/:since"
-      },
-      {
-        "title": "User followers",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": "/:user",
-        "target": "/github/user/followers/:user"
-      },
-      {
-        "title": "Wiki history",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:user/:repo/wiki/:page/_history",
-          "/:user/:repo/wiki/:page",
-          "/:user/:repo/wiki/_history",
-          "/:user/:repo/wiki"
-        ],
-        "target": "/github/wiki/:user/:repo/:page"
-      },
-      {
-        "title": "Notifications",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/notifications"
-        ],
-        "target": "/github/notifications"
-      }
-    ],
-    "gist": [
-      {
-        "title": "Gist Commits",
-        "docs": "https://docs.rsshub.app/routes/programming#github",
-        "source": [
-          "/:owner/:gistId/revisions",
-          "/:owner/:gistId/stargazers",
-          "/:owner/:gistId/forks",
-          "/:owner/:gistId"
-        ],
-        "target": "/github/gist/:gistId"
-      }
-    ]
-  },
   "clickme.net": {
     "_name": "ClickMe",
     ".": [
@@ -7103,20 +6895,6 @@
         "docs": "https://docs.rsshub.app/routes/other#guo-jia-liu-xue-wang",
         "source": "/*",
         "target": "/csc/notice/lqgg"
-      }
-    ]
-  },
-  "cscse.edu.cn": {
-    "_name": "中国留学网",
-    ".": [
-      {
-        "title": "通知公告",
-        "docs": "https://docs.rsshub.app/routes/study#zhong-guo-liu-xue-wang-tong-zhi-gong-gao",
-        "source": [
-          "/cscse/index/tzgg",
-          "/"
-        ],
-        "target": "/cscse/tzgg"
       }
     ]
   },
@@ -10519,6 +10297,151 @@
       }
     ]
   },
+  "github.com": {
+    "_name": "GitHub",
+    ".": [
+      {
+        "title": "Repo branches",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/branches",
+          "/:user/:repo"
+        ],
+        "target": "/github/branches/:user/:repo"
+      },
+      {
+        "title": "Issues / Pull Requests comments",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/:type/:number"
+        ],
+        "target": "/github/comments/:user/:repo/:number"
+      },
+      {
+        "title": "Issue & Pull Request comments",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/:type"
+        ],
+        "target": "/github/comments/:user/:repo"
+      },
+      {
+        "title": "Repo contributors",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/graphs/contributors",
+          "/:user/:repo"
+        ],
+        "target": "/github/contributors/:user/:repo"
+      },
+      {
+        "title": "File commits",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": "/:user/:repo/blob/:branch/*filepath",
+        "target": "/github/file/:user/:repo/:branch/:filepath"
+      },
+      {
+        "title": "Repo issues",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/issues",
+          "/:user/:repo/issues/:id",
+          "/:user/:repo"
+        ],
+        "target": "/github/issue/:user/:repo"
+      },
+      {
+        "title": "Repo Pull Requests",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/pulls",
+          "/:user/:repo/pulls/:id",
+          "/:user/:repo"
+        ],
+        "target": "/github/pull/:user/:repo"
+      },
+      {
+        "title": "Pulse",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/pulse",
+          "/:user/:repo/pulse/:period"
+        ],
+        "target": "/github/pulse/:user/:repo/:period?"
+      },
+      {
+        "title": "User repos",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": "/:user",
+        "target": "/github/repos/:user"
+      },
+      {
+        "title": "Repo stars",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/stargazers",
+          "/:user/:repo"
+        ],
+        "target": "/github/stars/:user/:repo"
+      },
+      {
+        "title": "User starred repositories",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": "/:user",
+        "target": "/github/starred_repos/:user"
+      },
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": "/topics",
+        "target": "/github/topics/:name/:qs?"
+      },
+      {
+        "title": "Trending",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": "/trending",
+        "target": "/github/trending/:since"
+      },
+      {
+        "title": "User followers",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": "/:user",
+        "target": "/github/user/followers/:user"
+      },
+      {
+        "title": "Wiki history",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:user/:repo/wiki/:page/_history",
+          "/:user/:repo/wiki/:page",
+          "/:user/:repo/wiki/_history",
+          "/:user/:repo/wiki"
+        ],
+        "target": "/github/wiki/:user/:repo/:page"
+      },
+      {
+        "title": "Notifications",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/notifications"
+        ],
+        "target": "/github/notifications"
+      }
+    ],
+    "gist": [
+      {
+        "title": "Gist Commits",
+        "docs": "https://docs.rsshub.app/routes/programming#github",
+        "source": [
+          "/:owner/:gistId/revisions",
+          "/:owner/:gistId/stargazers",
+          "/:owner/:gistId/forks",
+          "/:owner/:gistId"
+        ],
+        "target": "/github/gist/:gistId"
+      }
+    ]
+  },
   "gitpod.io": {
     "_name": "Gitpod",
     ".": [
@@ -11792,6 +11715,20 @@
           "/s78/:column"
         ],
         "target": "/gov/moe/s78/:column"
+      }
+    ]
+  },
+  "mof.gov.cn": {
+    "_name": "中华人民共和国财政部",
+    "gks": [
+      {
+        "title": "专题: 政府债券管理",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-cai-zheng-bu",
+        "source": [
+          "/ztztz/guozaiguanli/:category",
+          "/ztztz/guozaiguanli/:category/*",
+          "/ztztz/guozaiguanli/"
+        ]
       }
     ]
   },
@@ -13475,15 +13412,6 @@
       }
     ]
   },
-  "guggenheim.org": {
-    "_name": "Solomon R. Guggenheim Museum",
-    "www": [
-      {
-        "title": "Exhibitions",
-        "docs": "https://docs.rsshub.app/routes/en/travel#solomon-r-guggenheim-museum"
-      }
-    ]
-  },
   "gumroad.com": {
     "_name": "Gumroad",
     ".": [
@@ -14837,19 +14765,6 @@
           "/explore/find"
         ],
         "target": "/imiker/ask/jinghua"
-      }
-    ]
-  },
-  "independent.co.uk": {
-    "_name": "PS5 stock UK - The Independent",
-    "www": [
-      {
-        "title": "News",
-        "docs": "https://docs.rsshub.app/routes/shopping#the-independent",
-        "source": [
-          "/extras/indybest/gadgets-tech/video-games-consoles/ps5-stock-uk-restock-live-today-b1938965.html"
-        ],
-        "target": "/ps5-stock-uk"
       }
     ]
   },
@@ -17109,19 +17024,6 @@
       }
     ]
   },
-  "kakuyomu.jp": {
-    "_name": "kakuyomu",
-    ".": [
-      {
-        "title": "章节更新",
-        "docs": "https://docs.rsshub.app/routes/reading#kakuyomu-zhang-jie-geng-xin",
-        "source": [
-          "/works/:id"
-        ],
-        "target": "/kakuyomu/episode/:id"
-      }
-    ]
-  },
   "kamen-rider-official.com": {
     "_name": "仮面ライダ",
     ".": [
@@ -17674,17 +17576,6 @@
         "title": "报道",
         "docs": "https://docs.rsshub.app/routes/new-media#wan-dian-latepost-bao-dao",
         "source": "*"
-      }
-    ]
-  },
-  "lativ.com.tw": {
-    "_name": "lativ",
-    "www": [
-      {
-        "title": "订阅商品价格",
-        "docs": "https://docs.rsshub.app/routes/shopping#lativ",
-        "source": "/Detail/:id",
-        "target": "/lativ/:id"
       }
     ]
   },
@@ -18666,15 +18557,6 @@
         "source": [
           "/:acct"
         ]
-      }
-    ]
-  },
-  "mcachicago.org": {
-    "_name": "MCA Chicago",
-    ".": [
-      {
-        "title": "Exhibitions",
-        "docs": "https://docs.rsshub.app/routes/en/travel#museum-of-contemporary-art-chicago"
       }
     ]
   },
@@ -22777,29 +22659,6 @@
       }
     ]
   },
-  "qidiantu.com": {
-    "_name": "起点图",
-    ".": [
-      {
-        "title": "首订",
-        "docs": "https://docs.rsshub.app/routes/reading#qi-dian-tu-shou-ding",
-        "source": [
-          "/shouding",
-          "/"
-        ],
-        "target": "/qidiantu/shouding"
-      },
-      {
-        "title": "榜单",
-        "docs": "https://docs.rsshub.app/routes/reading#qi-dian-tu-bang-dan",
-        "source": [
-          "/bang/:category/:type",
-          "/"
-        ],
-        "target": "/qidiantu/:category?/:type?/:is_history?"
-      }
-    ]
-  },
   "qingting.fm": {
     "_name": "蜻蜓 FM",
     ".": [
@@ -23350,14 +23209,6 @@
           "/*"
         ],
         "target": "/rsshub/routes"
-      },
-      {
-        "title": "有新赞助商啦",
-        "docs": "https://docs.rsshub.app/routes/program-update#rsshub",
-        "source": [
-          "/*"
-        ],
-        "target": "/rsshub/sponsors"
       }
     ]
   },
@@ -28858,20 +28709,6 @@
       }
     ]
   },
-  "vmware.com": {
-    "_name": "VMware",
-    "flings": [
-      {
-        "title": "Flings",
-        "docs": "https://docs.rsshub.app/routes/program-update#vmware-flings",
-        "source": [
-          "/flings",
-          "/"
-        ],
-        "target": "/vmware/flings"
-      }
-    ]
-  },
   "vocus.cc": {
     "_name": "方格子",
     ".": [
@@ -31754,17 +31591,6 @@
       }
     ]
   },
-  "ishuhui.com": {
-    "_name": "鼠绘漫画",
-    "www": [
-      {
-        "title": "鼠绘漫画",
-        "docs": "https://docs.rsshub.app/routes/anime#shu-hui-man-hua",
-        "source": "/comics/anime/:id",
-        "target": "/shuhui/comics/:id"
-      }
-    ]
-  },
   "www.chicagotribune.com": {
     "_name": "Chicago Tribune",
     "www": [
@@ -31772,41 +31598,6 @@
         "title": "Chicago Tribune",
         "docs": "https://docs.rsshub.app/routes/traditional_media#chicago-tribune",
         "source": "/"
-      }
-    ]
-  },
-  "haimaoba.com": {
-    "_name": "海猫吧",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/routes/anime#hai-mao-ba",
-        "source": "/catalog/:id",
-        "target": "/haimaoba/:id"
-      }
-    ]
-  },
-  "pgyer.com": {
-    "_name": "蒲公英应用分发",
-    "www": [
-      {
-        "title": "app更新",
-        "docs": "https://docs.rsshub.app/routes/program-update#pu-gong-ying-ying-yong-fen-fa",
-        "source": "/:app",
-        "target": "/pgyer/:app"
-      }
-    ]
-  },
-  "wineyun.com": {
-    "_name": "酒云网",
-    "www": [
-      {
-        "title": "最新商品",
-        "docs": "https://docs.rsshub.app/routes/other#jiu-yun-wang",
-        "source": [
-          "/:category"
-        ],
-        "target": "/wineyun/:category"
       }
     ]
   },
@@ -31862,28 +31653,6 @@
       }
     ]
   },
-  "vgtime.com": {
-    "_name": "游戏时光",
-    "www": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/game#you-xi-shi-guang",
-        "source": "/topic/index.jhtml",
-        "target": "/vgtime/news"
-      },
-      {
-        "title": "游戏发售表",
-        "docs": "https://docs.rsshub.app/routes/game#you-xi-shi-guang",
-        "source": "/game/release.jhtml",
-        "target": "/vgtime/release"
-      },
-      {
-        "title": "关键词资讯",
-        "docs": "https://docs.rsshub.app/routes/game#you-xi-shi-guang",
-        "source": "/search/list.jhtml"
-      }
-    ]
-  },
   "bing.com": {
     "_name": "Bing",
     "www": [
@@ -31912,17 +31681,6 @@
       }
     ]
   },
-  "3ycy.com": {
-    "_name": "三界异次元",
-    "www": [
-      {
-        "title": "最近更新",
-        "docs": "https://docs.rsshub.app/routes/anime#san-jie-yi-ci-yuan",
-        "source": "/",
-        "target": "/3ycy/home"
-      }
-    ]
-  },
   "emi-nitta.net": {
     "_name": "Emi Nitta",
     ".": [
@@ -31937,27 +31695,6 @@
         "docs": "https://docs.rsshub.app/routes/other#xin-tian-hui-hai-guan-fang-wang-zhan",
         "source": "/contents/news",
         "target": "/emi-nitta/news"
-      }
-    ]
-  },
-  "alter-shanghai.cn": {
-    "_name": "Alter",
-    ".": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/shopping#alter-zhong-guo",
-        "source": "/cn/news.html",
-        "target": "/alter-cn/news"
-      }
-    ]
-  },
-  "leboncoin.fr": {
-    "_name": "leboncoin",
-    "www": [
-      {
-        "title": "ads",
-        "docs": "https://docs.rsshub.app/routes/shopping#leboncoin",
-        "source": "/recherche"
       }
     ]
   },
@@ -32141,20 +31878,6 @@
           "/:id",
           "/:id/comments"
         ]
-      }
-    ]
-  },
-  "zhaishuyuan.com": {
-    "_name": "斋书苑",
-    ".": [
-      {
-        "title": "最新章节",
-        "docs": "https://docs.rsshub.app/routes/reading#zhai-shu-yuan",
-        "source": [
-          "/book/:id",
-          "/read/:id"
-        ],
-        "target": "/novel/zhaishuyuan/:id"
       }
     ]
   },
@@ -32411,15 +32134,6 @@
       }
     ]
   },
-  "craigslist.org": {
-    "_name": "Craigslist",
-    ".": [
-      {
-        "title": "商品搜索列表",
-        "docs": "https://docs.rsshub.app/routes/shopping#craigslist"
-      }
-    ]
-  },
   "scboy.com": {
     "_name": "scboy 论坛",
     "www": [
@@ -32551,17 +32265,6 @@
         "docs": "https://docs.rsshub.app/routes/social-media#fur-affinity",
         "source": "/journal/:id/",
         "target": "/furaffinity/journal_comments/:id"
-      }
-    ]
-  },
-  "macwk.com": {
-    "_name": "MacWk",
-    ".": [
-      {
-        "title": "应用更新",
-        "docs": "https://docs.rsshub.app/routes/program-update#macwk",
-        "source": "/soft/:name",
-        "target": "/macwk/soft/:name"
       }
     ]
   }
